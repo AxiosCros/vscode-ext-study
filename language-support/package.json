@@ -1,0 +1,25 @@
+{
+    "name": "language-support",
+    "displayName": "language-support",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.39.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "tea",
+            "aliases": ["tea-lang", "tea"],
+            "extensions": [".tea"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "tea",
+            "scopeName": "source.tea",
+            "path": "./syntaxes/tea.tmLanguage.json"
+        }]
+    }
+}
